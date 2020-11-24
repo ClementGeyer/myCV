@@ -14,7 +14,7 @@ class Software extends Component{
     render(){
         return(
             <div className={"iconDisplay"}>
-                <h2 className={"title"}>Logiciels</h2>
+                <h3 className={"title"}>Logiciels</h3>
                 <div className={"imgDisplay"}>
                     <ImgDisplay name={"IntelliJ"} img={IntelliJIcon}/>
                     <ImgDisplay name={"WebStorm"} img={WebStormIcon}/>

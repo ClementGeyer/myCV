@@ -45,9 +45,15 @@ body{
     background-color: lightgrey;
 }
 
-.iconDisplay .title{
+.title{
     font-family: 'Roboto Thin', sans-serif;
-    font-size: 50px;
+    font-size: 38px;
+    margin-left: 50px;
+}
+
+.subtitle{
+    font-family: 'Roboto Thin', sans-serif;
+    font-size: 24px;
     margin-left: 50px;
 }
 
@@ -67,5 +73,59 @@ body{
 
 .progLangName{
     text-align: center;
+}
+
+.certifDisplay{
+    padding: 20px;
+    background-color: #c5ffd2;
+}
+
+.diplome{
+    background-color: lightgrey;
+    border: 1px solid grey;
+    padding: 30px;
+    margin: 10px 10px 10px 75px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.diplomeTitle{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.diplomeDisplay{
+    display: flex;
+}
+
+.certifDisplay div{
+    margin-left: 50px;
+}
+
+.PBContainer{
+    width: 300px;
+    height: 20px;
+    background-color: #e0e0de;
+    border-radius: 50px;
+    margin: 50px;
+}
+
+.PBFiller{
+    margin-left: 0 !important;
+    height: 100%;
+    width: 91.5%;
+    background-color: grey;
+    border-radius: inherit;
+    padding-right: 0;
+    text-align: left;
+}
+
+.langueDisplay{
+    margin-left: 50px;
+}
+
+.langueDisplay p{
+    margin-left: 50px;
 }
 

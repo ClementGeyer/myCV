@@ -1,7 +1,8 @@
 const DipDisplay = (props) => {
     return(
-        <div>
-            <p>{props.name}</p>
+        <div className={"diplome"}>
+            <p className={"diplomeTitle"}>{props.name}</p>
+            <p>{props.desc}</p>
         </div>
     );
 }

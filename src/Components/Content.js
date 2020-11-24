@@ -5,6 +5,7 @@ import Profile from './Profile';
 import Contact from './Contact';
 import Diplome from './Diplome';
 import Software from './Software';
+import Langue from './Langue';
 
 class Content extends Component{
 
@@ -17,7 +18,11 @@ class Content extends Component{
                     <ProgLang/>
                     <Software/>
                 </div>
-                <Diplome/>
+                <div className={"certifDisplay"}>
+                    <h2 className={"title"}>Certifications</h2>
+                    <Diplome/>
+                    <Langue/>
+                </div>
                 <Experience/>
                 <Contact/>
             </div>

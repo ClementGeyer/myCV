@@ -18,7 +18,7 @@ class ProgLang extends Component{
     render(){
         return(
             <div className={"iconDisplay"}>
-                <h2 className={"title"}>Langages de programmation</h2>
+                <h3 className={"title"}>Langages de programmation</h3>
                 <div className={"imgDisplay"}>
                     <ImgDisplay name={"React"} img={ReactIcon}/>
                     <ImgDisplay name={"Java"} img={JavaIcon}/>
