@@ -1,7 +1,9 @@
+import './css/style.css';
+
 const CompDisplay = (props) => {
     return(
         <div>
-            <p>{props.name}</p>
+            <img className={"compImg"} src={props.img} name={props.name}/>
         </div>
     );
 }

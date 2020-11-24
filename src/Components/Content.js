@@ -1,4 +1,4 @@
-import {Component} from "react";
+import React, {Component} from "react";
 import Experience from './Experience';
 import Competence from './Competence';
 import Profile from './Profile';

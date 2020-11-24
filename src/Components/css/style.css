@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Roboto Thin';
+    src: local('Roboto Thin'), url(./fonts/Roboto/Roboto-Thin.ttf) format('truetype');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.profile{
+    padding: 20px;
+    background-color: #c5ffd2;
+}
+
+.profile_name {
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Thin', sans-serif;
+    font-size: 68px;
+}
+
+.profile_infos{
+    text-align: left;
+    margin-left: 75px;
+    font-family: 'Roboto Thin', sans-serif;
+    font-size: 28px;
+}
+
+.profile_menu p{
+    text-align: center;
+    color: black;
+    margin: 20px 100px 20px 1050px;
+    font-family: 'Roboto Thin', sans-serif;
+    font-size: 30px;
+    border: 2px solid grey;
+    background-color: #e2ffdd;
+    opacity: 50%;
+    border-radius: 10px;
+}
+
+.competence{
+    padding: 20px;
+    background-color: lightgrey;
+}
+
+.competence .title{
+    font-family: 'Roboto Thin', sans-serif;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+.comp
+
