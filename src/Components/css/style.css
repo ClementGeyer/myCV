@@ -40,16 +40,32 @@ body{
     border-radius: 10px;
 }
 
-.competence{
+.iconDisplay{
     padding: 20px;
     background-color: lightgrey;
 }
 
-.competence .title{
+.iconDisplay .title{
     font-family: 'Roboto Thin', sans-serif;
     font-size: 50px;
     margin-left: 50px;
 }
 
-.comp
+.imgDisplay{
+    display: flex;
+    margin-left: 50px;
+}
+
+.imgDisplay img{
+    padding: 10px;
+}
+
+.progLangImg{
+    height: 100px;
+    width: 100px;
+}
+
+.progLangName{
+    text-align: center;
+}
 

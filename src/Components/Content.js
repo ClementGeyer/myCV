@@ -1,9 +1,10 @@
 import React, {Component} from "react";
 import Experience from './Experience';
-import Competence from './Competence';
+import ProgLang from './ProgLang';
 import Profile from './Profile';
 import Contact from './Contact';
 import Diplome from './Diplome';
+import Software from './Software';
 
 class Content extends Component{
 
@@ -11,7 +12,11 @@ class Content extends Component{
         return(
             <div>
                 <Profile/>
-                <Competence/>
+                <div className={"iconDisplay"}>
+                    <h2 className={"title"}>Outils maîtrisés</h2>
+                    <ProgLang/>
+                    <Software/>
+                </div>
                 <Diplome/>
                 <Experience/>
                 <Contact/>
