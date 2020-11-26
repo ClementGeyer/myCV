@@ -12,12 +12,14 @@ class Profile extends Component{
     render(){
         return(
             <div className={"profile"}>
-                <h2 className={"title"}>{this.state.name}</h2>
-                <p className={"profile_infos"}>{this.state.studies}</p>
-                <p className={"profile_infos"}>{this.state.domain}</p>
+                <h2 className={"profile_name"}>{this.state.name}</h2>
+                <div className={"profile_infos"}>
+                    <p>{this.state.studies}</p>
+                    <p>{this.state.domain}</p>
+                </div>            
                 <div className={"profile_menu"}>
-                    <p onMouseEnter={this.grow.bind(this, true)} onMouseLeave={this.grow.bind(this, false)}>Compétences</p>
-                    <p onMouseEnter={this.grow.bind(this, true)} onMouseLeave={this.grow.bind(this, false)}>Diplomes</p>
+                    <p onMouseEnter={this.grow.bind(this, true)} onMouseLeave={this.grow.bind(this, false)}>Outils</p>
+                    <p onMouseEnter={this.grow.bind(this, true)} onMouseLeave={this.grow.bind(this, false)}>Certifications</p>
                     <p onMouseEnter={this.grow.bind(this, true)} onMouseLeave={this.grow.bind(this, false)}>Expériences</p>
                     <p onMouseEnter={this.grow.bind(this, true)} onMouseLeave={this.grow.bind(this, false)}>Contact</p>
                 </div>
