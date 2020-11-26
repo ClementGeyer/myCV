@@ -66,7 +66,7 @@ body{
     padding: 10px;
 }
 
-.progLangImg{
+.imgSizing{
     height: 100px;
     width: 100px;
 }
@@ -129,3 +129,47 @@ body{
     margin-left: 50px;
 }
 
+.expBlocDisplay{
+    text-align: center;
+    margin: 35px 0;
+}
+
+.exp{
+    opacity: 50%;
+    margin: 35px 0;
+}
+
+.expActive{
+    opacity: 100%;
+    margin: 35px 0;
+}
+
+.expHidden{
+    opacity: 0;
+    margin: 35px 0;
+}
+
+.experience{
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+.arrowDisplay{
+    display: flex;
+    margin-left: 450px;
+}
+
+.arrows{
+    width: 50px;
+    margin: 150px 30px;
+}
+
+.arrowSizing{
+    width: 50px;
+    height: 50px;
+}
+
+.contactDisplay{
+    padding: 20px;
+    background-color: #c5ffd2;
+}

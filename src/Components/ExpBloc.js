@@ -1,6 +1,6 @@
 const ExpBloc = (props) => {
     return(
-        <div>
+        <div className={props.className}>
             <h3>{props.name}</h3>
             <p>{props.desc}</p>
         </div>

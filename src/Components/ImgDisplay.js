@@ -3,8 +3,8 @@ import './css/style.css';
 const ImgDisplay = (props) => {
     return(
         <div>
-            <img className={"progLangImg"} src={props.img} name={props.name}/>
-            <p className={"progLangName"}>{props.name}</p>
+            <img className={"imgSizing"} src={props.img} name={props.name}/>
+            <p className={"imgSizing"}>{props.name}</p>
         </div>
     );
 }

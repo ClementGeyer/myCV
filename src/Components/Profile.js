@@ -12,7 +12,7 @@ class Profile extends Component{
     render(){
         return(
             <div className={"profile"}>
-                <p className={"profile_name"}>{this.state.name}</p>
+                <h2 className={"title"}>{this.state.name}</h2>
                 <p className={"profile_infos"}>{this.state.studies}</p>
                 <p className={"profile_infos"}>{this.state.domain}</p>
                 <div className={"profile_menu"}>
