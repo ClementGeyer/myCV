@@ -4,12 +4,17 @@
 }
 
 @font-face {
+    font-family: 'Roboto Regular';
+    src: local('Roboto Regular'), url(./fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
     font-family: 'Caveat';
     src: local('Caveat'), url(./fonts/Caveat/Caveat-VariableFont_wght.ttf) format('truetype');
 }
 
 body {
-	background: linear-gradient(-45deg, lightgreen, grey );
+	background-color: rgb(22, 105, 120);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 }
@@ -24,6 +29,14 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+.bar{
+    width: 1200px;
+    margin-top: 40px;
+    height: 3px;
+    background-color: black;
+    border-radius: 10px;
 }
 
 .profile{
@@ -43,6 +56,7 @@ body {
     margin: 75px 150px;
     font-family: 'Roboto Thin', sans-serif;
     font-size: 28px;
+    color:white;
 }
 
 .profile_menu{
@@ -51,45 +65,60 @@ body {
 
 .profile_menu p{
     text-align: center;
-    color: black;
     margin: 20px 100px 20px 1050px;
     font-family: 'Roboto Thin', sans-serif;
     font-size: 30px;
+    color: grey;
     border: 2px solid grey;
-    background-color: #e2ffdd;
+    background-color: white;
     opacity: 50%;
     border-radius: 10px;
 }
 
 .iconDisplay{
     padding: 20px;
-    background-color: lightgrey;
+    display: flex;
+    background-color: rgb(173, 173, 173);
 }
 
-.title{
-    font-family: 'Roboto Thin', sans-serif;
+.titleBlue{
+    font-family: 'Roboto Regular', sans-serif;
     font-size: 38px;
+    font-weight: bold;
     margin-left: 50px;
+    color: black;
+}
+
+.titleGreen{
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    margin-left: 50px;
+    color: white;
 }
 
 .subtitle{
     font-family: 'Roboto Thin', sans-serif;
-    font-size: 24px;
+    font-size: 32px;
     margin-left: 50px;
 }
 
 .imgDisplay{
     display: flex;
-    margin-left: 50px;
+    margin: 0 300px;
+    border: 1px solid black;
+    padding: 5px 20px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .imgDisplay img{
-    padding: 10px;
+    padding: 12px;
 }
 
 .imgSizing{
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
 }
 
 .progLangName{
@@ -98,20 +127,25 @@ body {
 
 .certifDisplay{
     padding: 20px;
-    background-color: #c5ffd2;
+    background: linear-gradient(rgb(22, 105, 120), rgb(255, 255, 255), rgb(255, 255, 255));
 }
 
 .diplome{
-    background-color: lightgrey;
-    border: 1px solid grey;
+    border: 1px solid black;
     padding: 30px;
     margin: 10px 10px 10px 75px;
     width: 250px;
     text-align: center;
     border-radius: 10px;
+    background-color: rgb(101, 142, 150);
+}
+
+.diplome:hover{
+    background-color: rgb(22, 105, 120);
 }
 
 .diplomeTitle{
+    color: white;
     font-size: 26px;
     font-weight: bold;
 }
@@ -129,14 +163,25 @@ body {
     height: 20px;
     background-color: #e0e0de;
     border-radius: 50px;
-    margin: 50px;
+    margin: 30px;
+    border: 1px solid black;
 }
 
-.PBFiller{
+.PBFillerAnglais{
     margin-left: 0 !important;
     height: 100%;
     width: 91.5%;
-    background-color: grey;
+    background-color: rgb(22, 105, 120);
+    border-radius: inherit;
+    padding-right: 0;
+    text-align: left;
+}
+
+.PBFillerEspagnol{
+    margin-left: 0 !important;
+    height: 100%;
+    width: 70%;
+    background-color: rgb(22, 105, 120);
     border-radius: inherit;
     padding-right: 0;
     text-align: left;
@@ -144,10 +189,12 @@ body {
 
 .langueDisplay{
     margin-left: 50px;
+    display: flex;
 }
 
 .langueDisplay p{
     margin-left: 50px;
+    font-weight: bold;
 }
 
 .expBlocDisplay{
@@ -156,21 +203,21 @@ body {
 
 .exp{
     opacity: 50%;
-    margin: 0px 0;
+    color: white;
 }
 
 .expActive{
     opacity: 100%;
     margin: 35px 0;
+    color: white;
 }
 
 .expHidden{
     opacity: 0;
-    margin: 35px 0;
 }
 
 .experience{
-    background-color: lightgrey;
+    background-color: rgb(80, 138, 80);
     padding: 20px;
 }
 
@@ -191,5 +238,5 @@ body {
 
 .contactDisplay{
     padding: 20px;
-    background-color: #c5ffd2;
+    background-color: rgb(96, 124, 96);
 }

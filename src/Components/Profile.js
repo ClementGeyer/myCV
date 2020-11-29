@@ -29,7 +29,9 @@ class Profile extends Component{
     }
 
     grow = (enter, e) => {
-        enter ? e.target.style.border = "2px solid #7bff7e" : e.target.style.border = "2px solid grey";
+        enter ? e.target.style.color = "rgb(135, 172, 139)" : e.target.style.color = "grey";
+        enter ? e.target.style.fontFamily = "Roboto Regular, sans-serif" : e.target.style.fontFamily = "Roboto Thin, sans-serif";
+        enter ? e.target.style.border = "2px solid black" : e.target.style.border = "2px solid grey";
         enter ? e.target.style.opacity = "100%" : e.target.style.opacity = "50%";
     }
 }

@@ -12,6 +12,8 @@ import OracleIcon from './css/img/oracle.png';
 import JavaScriptIcon from './css/img/javascript.png';
 import HTMLIcon from './css/img/html.png';
 import CSSIcon from './css/img/css.png';
+import UpArrow from './css/img/up.png';
+import DownArrow from './css/img/down.png';
 
 class ProgLang extends Component{
 

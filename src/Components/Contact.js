@@ -4,7 +4,8 @@ class Contact extends Component{
 
     state = {
         email: 'clementgeyer4@gmail.com',
-        numero: '06 34 96 63 86'
+        numero: '06 34 96 63 86',
+        github: 'https://github.com/Wiz3rt'
     }
 
     render(){
@@ -14,6 +15,7 @@ class Contact extends Component{
                 <div className={"profile_infos"}>
                     <p> Numéro de téléphone : {this.state.numero} </p>
                     <p> Si vous avez besoin de renseignements, contactez-moi à l'adresse : {this.state.email} </p>
+                    <p> Github : {this.state.github} </p>
                 </div>
             </div>
 

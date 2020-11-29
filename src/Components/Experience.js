@@ -33,7 +33,7 @@ const Experience = () => {
 
     return (
         <div className={"experience"}>
-            <h2 className={"title"}>Experiences</h2>
+            <h2 className={"titleGreen"}>Experiences</h2>
             <div className={"arrowDisplay"}>
                 <div className={"arrows"}>
                     <img onClick={() => arrow(1)} className={"arrowSizing"} src={UpArrow} alt={"upArrow"}/>
@@ -48,7 +48,7 @@ const Experience = () => {
                         name={"Pizzeria L'Arc Des Princes"} desc={"Job d'été dans une pizzeria (2015)"}/>
                     <ExpBloc
                         className={`exp${expActive === 3 ? "Active" : Math.abs(expActive - 3) > 1 ? "Hidden" : ""}`}
-                        name={"Entreprise SOPROFEN"} desc={"Stage d'observation (2026)"}/>
+                        name={"Entreprise SOPROFEN"} desc={"Stage d'observation (2016)"}/>
                 </animated.div>
             </div>
         </div>

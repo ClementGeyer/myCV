@@ -13,17 +13,18 @@ class Content extends Component{
         return(
             <div>
                 <Profile/>
-                <div className={"iconDisplay"}>
-                    <h2 className={"title"}>Outils maîtrisés</h2>
-                    <ProgLang/>
-                    <Software/>
-                </div>
                 <div className={"certifDisplay"}>
-                    <h2 className={"title"}>Certifications</h2>
+                    <h2 className={"titleBlue"}>Certifications</h2>
                     <Diplome/>
+                    <hr className={"bar"}/>
                     <Langue/>
                 </div>
                 <Experience/>
+                <div className={"iconDisplay"}>
+                    <h2 className={"titleGreen"}>Outils maîtrisés</h2>
+                    <ProgLang/>
+                    <Software/>
+                </div>
                 <Contact/>
             </div>
 

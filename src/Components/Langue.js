@@ -1,26 +1,15 @@
 import {Component} from "react";
+import LangueDisplay from './LangueDisplay.js';
 
 class Langue extends Component{
-
-    state = {
-        name: 'Anglais',
-        points: 915,
-        maxpoints: 990,
-        certification: 'TOEIC'
-    }
 
     render(){
         return(
             <div>
-                <h3 className={"title"}>Langues</h3>
+                <h3 className={"subtitle"}>Langues</h3>
                 <div className={"langueDisplay"}>
-                    <h3 className={"subtitle"}>{this.state.name}</h3>
-                    <div className={"PBContainer"}>
-                        <div className={"PBFiller"}>
-                            <span/>
-                        </div>
-                    </div>
-                    <p>Certification {this.state.certification}: {this.state.points}/{this.state.maxpoints}</p>
+                    <LangueDisplay name="Anglais" certification="TOEIC" points="915" maxpoints="990" ratio="92.4"/>
+                    <LangueDisplay name="Espagnol" certification="BAC" points="14" maxpoints="20" ratio="70"/>
                 </div>
             </div>
         );
