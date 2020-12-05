@@ -2,9 +2,8 @@ import './css/style.css';
 
 const ImgDisplay = (props) => {
     return(
-        <div>
+        <div className={props.className}>
             <img className={"imgSizing"} src={props.img} name={props.name}/>
-            <p className={"imgSizing"}>{props.name}</p>
         </div>
     );
 }

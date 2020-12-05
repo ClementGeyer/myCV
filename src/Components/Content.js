@@ -6,6 +6,7 @@ import Contact from './Contact';
 import Diplome from './Diplome';
 import Software from './Software';
 import Langue from './Langue';
+import Projects from './Projects';
 
 class Content extends Component{
 

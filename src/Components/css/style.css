@@ -16,19 +16,6 @@
 body {
 	background-color: rgb(22, 105, 120);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }
 
 .bar{
@@ -75,10 +62,15 @@ body {
     border-radius: 10px;
 }
 
+.iconarrow{
+    display: flex;
+    margin: 0 75px;
+    
+}
+
 .iconDisplay{
     padding: 20px;
-    display: flex;
-    background-color: rgb(173, 173, 173);
+    background-color: rgb(96, 141, 96);
 }
 
 .titleBlue{
@@ -103,9 +95,15 @@ body {
     margin-left: 50px;
 }
 
+.subtitleGreen{
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    color: white;
+}
+
 .imgDisplay{
     display: flex;
-    margin: 0 300px;
     border: 1px solid black;
     padding: 5px 20px;
     background-color: white;
@@ -117,8 +115,9 @@ body {
 }
 
 .imgSizing{
-    height: 50px;
-    width: 50px;
+    height: 75px;
+    width: 75px;
+    margin: 2px;
 }
 
 .progLangName{
@@ -234,9 +233,42 @@ body {
 .arrowSizing{
     width: 50px;
     height: 50px;
+    margin: 30px;
 }
 
 .contactDisplay{
     padding: 20px;
-    background-color: rgb(96, 124, 96);
+    background-color: black;
+}
+
+.langHidden{
+    display: none;
+}
+
+.proglang{
+    margin: 100px 250px;
+    padding-bottom: 100px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: rgb(152, 206, 152);
+}
+
+.software{
+    margin: 100px 250px;
+    padding-bottom: 100px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: rgb(152, 206, 152);
+}
+
+.github{
+    margin-left: 500px;
+}
+
+.contact_infos{
+    color: white;
+    font-family: 'Roboto Thin', sans-serif;
+    margin-left: 80px;
+    font-size: 18px;
+    display: flex;
 }
