@@ -32,7 +32,7 @@ const Experience = () => {
     }
 
     return(
-        <div className={"experience"}>
+        <div id={"experience"}>
             <h2 className={"title_white"}>Experiences</h2>
             <div className={"experience_display"}>
                 <div className={"arrows"}>

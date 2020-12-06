@@ -13,7 +13,7 @@ class Content extends Component{
         return(
             <div>
                 <Profile/>
-                <div className={"certification"}>
+                <div id={"certification"}>
                     <h2 className={"title_black"}>Certifications</h2>
                     <h3 className={"subtitle_black"}>Diplomes</h3>
                     <div className={"diploma_display"}>
@@ -28,7 +28,7 @@ class Content extends Component{
                     </div>
                 </div>
                 <Experience/>
-                <div className={"tools"}>
+                <div id={"tools"}>
                     <h2 className={"title_white"}>Outils maîtrisés</h2>
                     <ProgLang/>
                     <Software/>

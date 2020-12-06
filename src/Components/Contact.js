@@ -12,7 +12,7 @@ class Contact extends Component{
 
     render(){
         return(
-            <div className={"contact"}>
+            <div id={"contact"}>
                 <h3 className={"title_white"}>Contact</h3>
                 <div className={"contact_infos"}>
                     <div>

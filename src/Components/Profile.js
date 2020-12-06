@@ -1,5 +1,6 @@
 import './css/style.css';
 import {Component} from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 class Profile extends Component{
 
@@ -10,6 +11,7 @@ class Profile extends Component{
     }
 
     render(){
+
         return(
             <div className={"profile"}>
                 <h2 className={"profile_name"}>{this.state.name}</h2>
@@ -18,10 +20,30 @@ class Profile extends Component{
                     <p>{this.state.domain}</p>
                 </div>            
                 <div className={"profile_menu"}>
-                    <p onMouseEnter={this.grow.bind(this, true)} onMouseLeave={this.grow.bind(this, false)}>Outils</p>
-                    <p onMouseEnter={this.grow.bind(this, true)} onMouseLeave={this.grow.bind(this, false)}>Certifications</p>
-                    <p onMouseEnter={this.grow.bind(this, true)} onMouseLeave={this.grow.bind(this, false)}>Expériences</p>
-                    <p onMouseEnter={this.grow.bind(this, true)} onMouseLeave={this.grow.bind(this, false)}>Contact</p>
+                    <Link onMouseEnter={this.grow.bind(this, true)} onMouseLeave={this.grow.bind(this, false)}
+                        activeClass="active"
+                        to="certification"
+                        spy={true}
+                        smooth={true}
+                        duration={500}>Certifications</Link>
+                    <Link onMouseEnter={this.grow.bind(this, true)} onMouseLeave={this.grow.bind(this, false)}
+                        activeClass="active"
+                        to="experience"
+                        spy={true}
+                        smooth={true}
+                        duration={500}>Expériences</Link>
+                    <Link onMouseEnter={this.grow.bind(this, true)} onMouseLeave={this.grow.bind(this, false)}
+                        activeClass="active"
+                        to="tools"
+                        spy={true}
+                        smooth={true}
+                        duration={500}>Outils</Link>
+                    <Link onMouseEnter={this.grow.bind(this, true)} onMouseLeave={this.grow.bind(this, false)}
+                        activeClass="active"
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        duration={500}>Contact</Link>
                 </div>
             </div>
 
