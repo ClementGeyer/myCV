@@ -12,14 +12,14 @@ class Contact extends Component{
 
     render(){
         return(
-            <div className={"contactDisplay"}>
-                <h3 className={"titleGreen"}>Contact</h3>
+            <div className={"contact"}>
+                <h3 className={"title_white"}>Contact</h3>
                 <div className={"contact_infos"}>
                     <div>
                         <p> Numéro de téléphone : {this.state.numero} </p>
                         <p> Si vous avez besoin de renseignements, contactez-moi à l'adresse : {this.state.email} </p>
                     </div>
-                    <a className={"github"} href={this.state.github}><img className={"imgSizing"} src={githubLogo}/></a>
+                    <a className={"github"} href={this.state.github}><img className={"img_sizing"} src={githubLogo}/></a>
                 </div>
             </div>
 

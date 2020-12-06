@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
-import ExpBloc from './ExpBloc';
+import ExperienceBloc from './ExperienceBloc';
 import DownArrow from './css/img/down.png';
 import UpArrow from './css/img/up.png';
 import './css/style.css';
@@ -31,22 +31,22 @@ const Experience = () => {
         }
     }
 
-    return (
+    return(
         <div className={"experience"}>
-            <h2 className={"titleGreen"}>Experiences</h2>
-            <div className={"arrowDisplay"}>
+            <h2 className={"title_white"}>Experiences</h2>
+            <div className={"experience_display"}>
                 <div className={"arrows"}>
-                    <img onClick={() => arrow(1)} className={"arrowSizing"} src={UpArrow} alt={"upArrow"}/>
-                    <img onClick={() => arrow(2)} className={"arrowSizing"} src={DownArrow} alt={"downArrow"}/>
+                    <img onClick={() => arrow(1)} className={"arrow_sizing"} src={UpArrow} alt={"upArrow"}/>
+                    <img onClick={() => arrow(2)} className={"arrow_sizing"} src={DownArrow} alt={"downArrow"}/>
                 </div>
-                <animated.div style={swap} className={"expBlocDisplay"}>
-                    <ExpBloc
+                <animated.div style={swap}>
+                    <ExperienceBloc
                         className={`exp${expActive === 1 ? "Active" : Math.abs(expActive - 1) > 1 ? "Hidden" : ""}`}
                         name={"IUT Robert Schumann"} desc={"2 années de DUT Informatique (2019-2021)"}/>
-                    <ExpBloc
+                    <ExperienceBloc
                         className={`exp${expActive === 2 ? "Active" : Math.abs(expActive - 2) > 1 ? "Hidden" : ""}`}
                         name={"Pizzeria L'Arc Des Princes"} desc={"Job d'été dans une pizzeria (2015)"}/>
-                    <ExpBloc
+                    <ExperienceBloc
                         className={`exp${expActive === 3 ? "Active" : Math.abs(expActive - 3) > 1 ? "Hidden" : ""}`}
                         name={"Entreprise SOPROFEN"} desc={"Stage d'observation (2016)"}/>
                 </animated.div>

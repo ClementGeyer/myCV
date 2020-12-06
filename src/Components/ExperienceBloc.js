@@ -1,4 +1,4 @@
-const ExpBloc = (props) => {
+const ExperienceBloc = (props) => {
     return(
         <div className={props.className}>
             <h3>{props.name}</h3>
@@ -7,4 +7,4 @@ const ExpBloc = (props) => {
     );
 }
 
-export default ExpBloc;
+export default ExperienceBloc;

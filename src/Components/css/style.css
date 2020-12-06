@@ -18,13 +18,55 @@ body {
 	background-size: 400% 400%;
 }
 
-.bar{
-    width: 1200px;
-    margin-top: 40px;
-    height: 3px;
-    background-color: black;
-    border-radius: 10px;
+/* COMPONENTS */
+
+.subtitle_black{
+    font-family: 'Roboto Thin', sans-serif;
+    font-size: 32px;
+    margin-left: 150px;
+    color: black;
 }
+
+.subtitle_white{
+    font-family: 'Roboto Thin', sans-serif;
+    font-size: 32px;
+    margin-left: 150px;
+    color: white;
+}
+
+.title_black{
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    margin-left: 50px;
+    color: black;
+}
+
+.title_white{
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    margin-left: 50px;
+    color: white;
+}
+
+.arrows{
+    width: 50px;
+    margin: 100px 30px;
+}
+
+.arrow_sizing{
+    width: 50px;
+    height: 50px;
+}
+
+.img_sizing{
+    height: 75px;
+    width: 75px;
+    margin: 2px;
+}
+
+/* PROFILE CSS */
 
 .profile{
     padding: 20px;
@@ -62,142 +104,106 @@ body {
     border-radius: 10px;
 }
 
-.iconarrow{
-    display: flex;
-    margin: 0 75px;
-    
-}
+/* CERTIFICATION CSS */
 
-.iconDisplay{
-    padding: 20px;
-    background-color: rgb(96, 141, 96);
-}
-
-.titleBlue{
-    font-family: 'Roboto Regular', sans-serif;
-    font-size: 38px;
-    font-weight: bold;
-    margin-left: 50px;
-    color: black;
-}
-
-.titleGreen{
-    font-family: 'Roboto Regular', sans-serif;
-    font-size: 38px;
-    font-weight: bold;
-    margin-left: 50px;
-    color: white;
-}
-
-.subtitle{
-    font-family: 'Roboto Thin', sans-serif;
-    font-size: 32px;
-    margin-left: 50px;
-}
-
-.subtitleGreen{
-    font-family: 'Roboto Regular', sans-serif;
-    font-size: 32px;
-    text-align: center;
-    color: white;
-}
-
-.imgDisplay{
-    display: flex;
-    border: 1px solid black;
-    padding: 5px 20px;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.imgDisplay img{
-    padding: 12px;
-}
-
-.imgSizing{
-    height: 75px;
-    width: 75px;
-    margin: 2px;
-}
-
-.progLangName{
-    text-align: center;
-}
-
-.certifDisplay{
+.certification{
     padding: 20px;
     background: linear-gradient(rgb(22, 105, 120), rgb(255, 255, 255), rgb(255, 255, 255));
 }
 
-.diplome{
-    border: 1px solid black;
-    padding: 30px;
-    margin: 10px 10px 10px 75px;
-    width: 250px;
-    text-align: center;
+.bar{
+    width: 1200px;
+    margin-top: 40px;
+    height: 3px;
+    background-color: black;
     border-radius: 10px;
-    background-color: rgb(101, 142, 150);
 }
 
-.diplome:hover{
-    background-color: rgb(22, 105, 120);
+    /* DIPLOMAS */
+
+    .diploma_display{
+        margin-left: 50px;
+        display: flex;
+    }
+
+    .diploma{
+        border: 1px solid black;
+        padding: 30px;
+        margin: 10px 10px 10px 75px;
+        width: 250px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: rgb(101, 142, 150);
+    }
+
+    .diploma:hover{
+        background-color: rgb(22, 105, 120);
+    }
+    
+    .diploma_title{
+        color: white;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    /* LANGUAGES */
+
+    .language_display{
+        margin-left: 100px;
+        display: flex;
+    }
+    
+    .language_display p{
+        margin-left: 30px;
+        font-weight: bold;
+    }
+
+    .language_title{
+        font-family: 'Roboto Thin', sans-serif;
+        font-size: 24px;
+        margin-left: 30px;
+    }
+
+    .PBContainer{
+        width: 300px;
+        height: 20px;
+        background-color: #e0e0de;
+        border-radius: 50px;
+        margin-left: 50px;
+        margin: 30px;
+        border: 1px solid black;
+    }
+    
+    .PBFillerAnglais{
+        margin-left: 0 !important;
+        height: 100%;
+        width: 91.5%;
+        background-color: rgb(22, 105, 120);
+        border-radius: inherit;
+        padding-right: 0;
+        text-align: left;
+    }
+    
+    .PBFillerEspagnol{
+        margin-left: 0 !important;
+        height: 100%;
+        width: 70%;
+        background-color: rgb(22, 105, 120);
+        border-radius: inherit;
+        padding-right: 0;
+        text-align: left;
+    }
+
+/* Experience */
+
+.experience{
+    background-color: rgb(80, 138, 80);
+    padding: 20px;
 }
 
-.diplomeTitle{
-    color: white;
-    font-size: 26px;
-    font-weight: bold;
-}
-
-.diplomeDisplay{
+.experience_display{
     display: flex;
-}
-
-.certifDisplay div{
-    margin-left: 50px;
-}
-
-.PBContainer{
-    width: 300px;
-    height: 20px;
-    background-color: #e0e0de;
-    border-radius: 50px;
-    margin: 30px;
-    border: 1px solid black;
-}
-
-.PBFillerAnglais{
-    margin-left: 0 !important;
-    height: 100%;
-    width: 91.5%;
-    background-color: rgb(22, 105, 120);
-    border-radius: inherit;
-    padding-right: 0;
-    text-align: left;
-}
-
-.PBFillerEspagnol{
-    margin-left: 0 !important;
-    height: 100%;
-    width: 70%;
-    background-color: rgb(22, 105, 120);
-    border-radius: inherit;
-    padding-right: 0;
-    text-align: left;
-}
-
-.langueDisplay{
-    margin-left: 50px;
-    display: flex;
-}
-
-.langueDisplay p{
-    margin-left: 50px;
-    font-weight: bold;
-}
-
-.expBlocDisplay{
-    text-align: center;
+    margin-left: 450px;
 }
 
 .exp{
@@ -215,54 +221,56 @@ body {
     opacity: 0;
 }
 
-.experience{
-    background-color: rgb(80, 138, 80);
+/* TOOLS */
+
+.tools{
     padding: 20px;
+    background-color: rgb(96, 141, 96);
 }
 
-.arrowDisplay{
-    display: flex;
-    margin-left: 450px;
-}
+    /* PROGRAMMATION LANGUAGES */
 
-.arrows{
-    width: 50px;
-    margin: 100px 30px;
-}
+    .tool_display{
+        margin: 100px 250px;
+        padding-bottom: 100px;
+        border: 1px solid grey;
+        border-radius: 20px;
+        background-color: rgb(152, 206, 152);
+    }
 
-.arrowSizing{
-    width: 50px;
-    height: 50px;
-    margin: 30px;
-}
+    .tool_title{
+        text-align: center;
+        color: white;
+        font-family: 'Roboto Thin', sans-serif;
+        font-size: 30px;
+    }
 
-.contactDisplay{
+    .tool_container{
+        display: flex;
+        margin-left: 125px;
+    }
+
+    .tool_container_display{
+        display: flex;
+        border: 1px solid black;
+        padding: 5px 20px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+    .tool_container_display img{
+        padding: 12px;
+    }
+
+    .langHidden{
+        display: none;
+    }
+
+/* CONTACT */
+
+.contact{
     padding: 20px;
     background-color: black;
-}
-
-.langHidden{
-    display: none;
-}
-
-.proglang{
-    margin: 100px 250px;
-    padding-bottom: 100px;
-    border: 1px solid grey;
-    border-radius: 20px;
-    background-color: rgb(152, 206, 152);
-}
-
-.software{
-    margin: 100px 250px;
-    padding-bottom: 100px;
-    border: 1px solid grey;
-    border-radius: 20px;
-    background-color: rgb(152, 206, 152);
-}
-
-.github{
-    margin-left: 500px;
 }
 
 .contact_infos{
@@ -271,4 +279,8 @@ body {
     margin-left: 80px;
     font-size: 18px;
     display: flex;
+}
+
+.github{
+    margin-left: 500px;
 }

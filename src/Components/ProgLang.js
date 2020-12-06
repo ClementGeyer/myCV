@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ImgDisplay from "./ImgDisplay";
+import Tool from "./Tool";
 import './css/style.css';
 import ReactIcon from './css/img/react.png';
 import JavaIcon from './css/img/java.png';
@@ -39,24 +39,24 @@ const ProgLang= () =>{
     }
 
     return(
-        <div className={"proglang"}>
-            <h3 className={"subtitleGreen"}>Langages de programmation</h3>
-            <div className={"iconarrow"}>
-                <img onClick={() => arrow(2)} className={"arrowSizing"} src={LeftArrow} alt={"leftArrow"}/>
-                <div className={"imgDisplay"}>
-                    <ImgDisplay className={`lang${position > 8 || calculEcart(0) < 3 ? "Active" : "Hidden"}`} img={ReactIcon}/>
-                    <ImgDisplay className={`lang${position > 9 || calculEcart(1) < 3 ? "Active" : "Hidden"}`} img={JavaIcon}/>
-                    <ImgDisplay className={`lang${calculEcart(2) < 3 ? "Active" : "Hidden"}`} img={PHPIcon}/>
-                    <ImgDisplay className={`lang${calculEcart(3) < 3 ? "Active" : "Hidden"}`} img={CSharpIcon}/>
-                    <ImgDisplay className={`lang${calculEcart(4) < 3 ? "Active" : "Hidden"}`} img={GitIcon}/>
-                    <ImgDisplay className={`lang${calculEcart(5) < 3 ? "Active" : "Hidden"}`} img={BashIcon}/>
-                    <ImgDisplay className={`lang${calculEcart(6) < 3 ? "Active" : "Hidden"}`} img={CIcon}/>
-                    <ImgDisplay className={`lang${calculEcart(7) < 3 ? "Active" : "Hidden"}`} img={OracleIcon}/>
-                    <ImgDisplay className={`lang${calculEcart(8) < 3 ? "Active" : "Hidden"}`} img={JavaScriptIcon}/>
-                    <ImgDisplay className={`lang${position < 1 || calculEcart(9) < 3 ? "Active" : "Hidden"}`} name={"HTML"} img={HTMLIcon}/>
-                    <ImgDisplay className={`lang${position < 2 || calculEcart(10) < 3 ? "Active" : "Hidden"}`} name={"CSS"} img={CSSIcon}/>
+        <div className={"tool_display"}>
+            <h3 className={"tool_title"}>Langages de programmation</h3>
+            <div className={"tool_container"}>
+                <img onClick={() => arrow(2)} style={{marginTop: '30px'}} className={"arrow_sizing"} src={LeftArrow} alt={"leftArrow"}/>
+                <div className={"tool_container_display"}>
+                    <Tool className={`lang${position > 8 || calculEcart(0) < 3 ? "Active" : "Hidden"}`} img={ReactIcon}/>
+                    <Tool className={`lang${position > 9 || calculEcart(1) < 3 ? "Active" : "Hidden"}`} img={JavaIcon}/>
+                    <Tool className={`lang${calculEcart(2) < 3 ? "Active" : "Hidden"}`} img={PHPIcon}/>
+                    <Tool className={`lang${calculEcart(3) < 3 ? "Active" : "Hidden"}`} img={CSharpIcon}/>
+                    <Tool className={`lang${calculEcart(4) < 3 ? "Active" : "Hidden"}`} img={GitIcon}/>
+                    <Tool className={`lang${calculEcart(5) < 3 ? "Active" : "Hidden"}`} img={BashIcon}/>
+                    <Tool className={`lang${calculEcart(6) < 3 ? "Active" : "Hidden"}`} img={CIcon}/>
+                    <Tool className={`lang${calculEcart(7) < 3 ? "Active" : "Hidden"}`} img={OracleIcon}/>
+                    <Tool className={`lang${calculEcart(8) < 3 ? "Active" : "Hidden"}`} img={JavaScriptIcon}/>
+                    <Tool className={`lang${position < 1 || calculEcart(9) < 3 ? "Active" : "Hidden"}`} name={"HTML"} img={HTMLIcon}/>
+                    <Tool className={`lang${position < 2 || calculEcart(10) < 3 ? "Active" : "Hidden"}`} name={"CSS"} img={CSSIcon}/>
                 </div>
-                <img onClick={() => arrow(1)} className={"arrowSizing"} src={RightArrow} alt={"rightArrow"}/>
+                <img onClick={() => arrow(1)} style={{marginTop: '30px'}} className={"arrow_sizing"} src={RightArrow} alt={"rightArrow"}/>
             </div>
         </div>
 
