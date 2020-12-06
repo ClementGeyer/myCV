@@ -42,13 +42,13 @@ const Experience = () => {
                 <animated.div style={swap}>
                     <ExperienceBloc
                         className={`exp${expActive === 1 ? "Active" : Math.abs(expActive - 1) > 1 ? "Hidden" : ""}`}
-                        name={"IUT Robert Schumann"} desc={"2 années de DUT Informatique (2019-2021)"}/>
+                        name={"IUT Robert Schumann"} desc={"DUT Informatique (2019-2021 - 2 ans)"}/>
                     <ExperienceBloc
                         className={`exp${expActive === 2 ? "Active" : Math.abs(expActive - 2) > 1 ? "Hidden" : ""}`}
-                        name={"Pizzeria L'Arc Des Princes"} desc={"Job d'été dans une pizzeria (2015)"}/>
+                        name={"Pizzeria L'Arc Des Princes"} desc={"Job d'été : cuisinier dans une pizzeria (2015 - 1 mois)"}/>
                     <ExperienceBloc
                         className={`exp${expActive === 3 ? "Active" : Math.abs(expActive - 3) > 1 ? "Hidden" : ""}`}
-                        name={"Entreprise SOPROFEN"} desc={"Stage d'observation (2016)"}/>
+                        name={"Entreprise SOPROFEN"} desc={"Stage d'observation (2016 - 21 jours)"}/>
                 </animated.div>
             </div>
         </div>
