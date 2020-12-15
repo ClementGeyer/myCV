@@ -1,4 +1,4 @@
-import './css/style.css';
+import '../css/style.css';
 import {Component} from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 

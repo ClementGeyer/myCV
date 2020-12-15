@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
-import ExperienceBloc from './ExperienceBloc';
-import DownArrow from './css/img/down.png';
-import UpArrow from './css/img/up.png';
-import './css/style.css';
+import ExperienceBloc from '../Components/ExperienceBloc';
+import DownArrow from '../css/img/down.png';
+import UpArrow from '../css/img/up.png';
+import '../css/style.css';
 
 const Experience = () => {
 
@@ -14,6 +14,27 @@ const Experience = () => {
     const swap = useSpring({
         transform: isToggled ? 'translate3d(0,0,0)' : direction===1 ? 'translate3d(0,90px,0)' : 'translate3d(0,-90px,0)'
     })
+
+    const experiences = [
+        {
+            name: 'IUT Robert Schumann',
+            desc: 'DUT Informatique (2019-2021 - 2 ans)',
+            index: 1,
+            infos: 'Introduction aux systèmes informatiques : Bash \n Algorithmique avancée : Java \n Base de données avancées : Oracle \n Conception de documents et d\'interfaces numériques: HTML/CSS/JavaScript \n Programmation web côté serveur : PHP \n Conception et programmation objet avancée : C# \n Principe des système d\'exploitation : C'
+        },
+        {
+            name: 'Pizzeria L\'Arc Des Princes',
+            desc: 'Job d\'été : cuisinier dans une pizzeria (2015 - 1 mois)',
+            index: 2,
+            infos: 'Commis de cuisine \n Cuisiner des pizzas/pâtes \n Première réelle expérience profesionnelle'
+        },
+        {
+            name: 'Entreprise SOPROFEN',
+            desc: 'Stage d\'observation (2016 - 21 jours)',
+            index: 3,
+            infos: 'Observation des différents métiers de l\'entreprise \n Aide au référencement des articles vendus'
+        }
+    ]
 
     const arrow = (direction) => {
         var newIndex
@@ -40,15 +61,13 @@ const Experience = () => {
                     <img onClick={() => arrow(2)} className={"arrow_sizing"} src={DownArrow} alt={"downArrow"}/>
                 </div>
                 <animated.div style={swap}>
-                    <ExperienceBloc
-                        className={`exp${expActive === 1 ? "Active" : Math.abs(expActive - 1) > 1 ? "Hidden" : ""}`}
-                        name={"IUT Robert Schumann"} desc={"DUT Informatique (2019-2021 - 2 ans)"}/>
-                    <ExperienceBloc
-                        className={`exp${expActive === 2 ? "Active" : Math.abs(expActive - 2) > 1 ? "Hidden" : ""}`}
-                        name={"Pizzeria L'Arc Des Princes"} desc={"Job d'été : cuisinier dans une pizzeria (2015 - 1 mois)"}/>
-                    <ExperienceBloc
-                        className={`exp${expActive === 3 ? "Active" : Math.abs(expActive - 3) > 1 ? "Hidden" : ""}`}
-                        name={"Entreprise SOPROFEN"} desc={"Stage d'observation (2016 - 21 jours)"}/>
+                    {experiences.map((exp) => 
+                        <ExperienceBloc
+                            className={`exp${expActive === exp.index ? "Active" : Math.abs(expActive - exp.index) > 1 ? "Hidden" : ""}`}
+                            name={exp.name} desc={exp.desc}
+                            disabled={expActive === exp.index ? false : true}
+                            infos={exp.infos}/>
+                    )}
                 </animated.div>
             </div>
         </div>

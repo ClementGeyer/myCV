@@ -1,5 +1,5 @@
+import Content from './Sections/Content.js';
 import './App.css';
-import Content from './Components/Content.js';
 import {Component} from "react";
 
 class App extends Component{

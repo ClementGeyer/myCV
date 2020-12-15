@@ -1,11 +1,11 @@
 import React, {Component} from "react";
 import Experience from './Experience';
-import ProgLang from './ProgLang';
+import ProgLang from '../Components/ProgLang';
 import Profile from './Profile';
 import Contact from './Contact';
-import Diploma from './Diploma';
-import Software from './Software';
-import Language from './Language';
+import Diploma from '../Components/Diploma';
+import Software from '../Components/Software';
+import Language from '../Components/Language';
 
 class Content extends Component{
 

@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import githubLogo from './css/img/github.png'
+import githubLogo from '../css/img/github.png'
 
 class Contact extends Component{
 

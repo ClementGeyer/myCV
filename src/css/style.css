@@ -103,6 +103,7 @@ body {
     opacity: 50%;
     border-radius: 10px;
     padding: 0 30px;
+    line-height: normal;
 }
 
 /* CERTIFICATION CSS */
@@ -246,7 +247,8 @@ body {
 
 .tool_container{
     display: flex;
-    margin-left: 125px;
+    margin-left: 180px;
+    margin-top: 70px;
 }
 
 .tool_container_display{
@@ -263,6 +265,25 @@ body {
 
 .langHidden{
     display: none;
+}
+
+.PBContainerLittle{
+    width: 100px;
+    height: 10px;
+    background-color: #e0e0de;
+    border-radius: 50px;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+.PBFillerLittle{
+    margin-left: 0 !important;
+    height: 100%;
+    width: 91.5%;
+    background-color: rgb(32, 97, 30);
+    border-radius: inherit;
+    padding-right: 0;
+    text-align: left;
 }
 
 /* CONTACT */
