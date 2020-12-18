@@ -100,7 +100,7 @@ body {
     color: grey;
     border: 2px solid grey;
     background-color: white;
-    opacity: 50%;
+    opacity: .5;
     border-radius: 10px;
     padding: 0 30px;
     line-height: normal;
@@ -209,12 +209,12 @@ body {
 }
 
 .exp{
-    opacity: 50%;
+    opacity: .5;
     color: white;
 }
 
 .expActive{
-    opacity: 100%;
+    opacity: 1;
     margin: 35px 0;
     color: white;
 }
