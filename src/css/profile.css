@@ -71,3 +71,26 @@
         margin-left: .5em;
     }
 }
+
+@media screen and (max-width: 1920px){
+    .profile_name {
+        font-size: 8em;
+        margin-left: 1em;
+    }
+
+    .profile_infos{
+        text-align: left;
+        margin-left: 6em;
+        font-size: 2.5em;
+    }
+
+    .profile_menu{
+        margin-right: 10em;
+        width: 20%;
+    }
+
+    .profile_menu > *{
+        font-size: 2.5em;
+        margin-bottom: .75em;
+    }
+}

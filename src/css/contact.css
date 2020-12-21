@@ -29,3 +29,9 @@
         margin-left: 1em;
     }
 }
+
+@media screen and (max-width: 1920px){
+    .contact_infos{
+       font-size: 1.75em;
+    }
+}

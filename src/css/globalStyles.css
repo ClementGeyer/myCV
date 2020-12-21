@@ -91,3 +91,30 @@ body {
         width: 2em;
     }
 }
+
+@media  screen and (max-width: 1920px){
+    .subtitle_black{
+        font-size: 2.5em;
+        margin: 1em 0 1em 4em;
+    }
+    
+    .subtitle_white{
+        font-size: 2.5em;
+        margin: 1em 0 1em 4em;
+    } 
+
+    .title_black{
+        font-size: 3em;
+        margin: 1em 0 1em 1em;
+    }
+    
+    .title_white{
+        font-size: 3em;
+        margin: 1em 0 1em 1em;
+    }
+
+    .img_sizing{
+        height: 5em;
+        width: 5em;
+    }
+}
