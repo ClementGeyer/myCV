@@ -28,6 +28,11 @@
     font-size: 1.25em;
 }
 
+.hobbys_img{
+    width: 3em;
+    height: 3em;
+}
+
 .hobbys_display p{
     color: white;
     text-align: center;
@@ -38,5 +43,10 @@
     .hobbys_display div{
         width: 50%;
         margin-bottom: 3em;
+    }
+
+    .hobbys_img{
+        height: 8em;
+        padding-bottom: 2em;
     }
 }

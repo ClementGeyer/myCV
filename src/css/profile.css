@@ -42,26 +42,32 @@
 }
 
 @media(max-width: 700px){
+    .profile_name {
+        margin-left: .5em;
+    }
+
     .profile_infos{
-        text-align: center;
-        font-family: 'Roboto Thin', sans-serif;
-        font-size: 1.5em;
-        color:white;
+        margin: 0 0 3em 3em;
     }
 
     .profile_menu{
-        margin-bottom: 10em;
-        display: block;
-        margin-left: auto;
+        width: 50%;
+        margin: 0 0 2em 6em;
+    }
+}
+
+@media(min-width: 700px){
+    .profile_infos{
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .profile_menu{
         margin-right: 5em;
         width: 35%;
     }
 
     .profile_name {
-        text-align: left;
         margin-left: .5em;
-        margin-bottom: .625em;
-        font-family: 'Caveat', sans-serif;
-        font-size: 5.75em;
     }
 }

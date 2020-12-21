@@ -82,6 +82,17 @@
         margin: 2em;
         height: 13em;
     }
+
+    .bar{
+        width: 20em;
+    }
+}
+
+@media(min-width: 700px){
+    .diploma{
+        margin: 2em;
+        height: 13em;
+    }
     
     .bar{
         width: 35em;

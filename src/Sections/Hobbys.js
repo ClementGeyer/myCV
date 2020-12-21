@@ -30,7 +30,7 @@ const Hobbys = () => {
                 {hobbys.map((hobby, key) =>
                     <div key={key}>
                         <p className="hobbys_title">{hobby.name}</p>
-                        <img style={{width: '200px', height: '200px'}} src={hobby.img} alt={hobby.name}/>
+                        <img className="hobbys_img" src={hobby.img} alt={hobby.name}/>
                         <p>{hobby.desc}</p>
                     </div>
                 )}
