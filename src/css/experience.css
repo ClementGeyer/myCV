@@ -1,0 +1,25 @@
+#experience{
+    background-color: rgb(80, 138, 80);
+    padding: 5em 0;
+}
+
+.experience_display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.exp{
+    opacity: .5;
+    color: white;
+}
+
+.expActive{
+    opacity: 1;
+    margin: 2.18em 0;
+    color: white;
+}
+
+.expHidden{
+    opacity: 0;
+}

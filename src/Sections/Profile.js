@@ -1,6 +1,6 @@
-import '../css/style.css';
+import '../css/profile.css';
 import {Component} from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 class Profile extends Component{
 
@@ -13,9 +13,9 @@ class Profile extends Component{
     render(){
 
         return(
-            <div className={"profile"}>
-                <h2 className={"profile_name"}>{this.state.name}</h2>
-                <div className={"profile_infos"}>
+            <div id="profile">
+                <h2 className="profile_name">{this.state.name}</h2>
+                <div className="profile_infos">
                     <p>{this.state.studies}</p>
                     <p>{this.state.domain}</p>
                 </div>            
@@ -53,7 +53,7 @@ class Profile extends Component{
     grow = (enter, e) => {
         enter ? e.target.style.color = "rgb(135, 172, 139)" : e.target.style.color = "grey";
         enter ? e.target.style.fontFamily = "Roboto Regular, sans-serif" : e.target.style.fontFamily = "Roboto Thin, sans-serif";
-        enter ? e.target.style.border = "2px solid black" : e.target.style.border = "2px solid grey";
+        enter ? e.target.style.border = ".06em solid black" : e.target.style.border = ".06em solid grey";
         enter ? e.target.style.opacity = "100%" : e.target.style.opacity = "50%";
     }
 }

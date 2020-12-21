@@ -1,4 +1,5 @@
 import React from "react";
+import '../css/certification.css'
 
 const Diploma = (props) => {
 

@@ -16,9 +16,60 @@ const Software = () => {
     const [isToggled, setToggle] = useState(false);
     const [position, setPosition] = useState(2);
 
+    const softwares = [
+        {
+            name: 'IntelliJ',
+            percentage: '100%',
+            img: IntelliJIcon,
+            index: 0
+        },
+        {
+            name: 'WebStorm',
+            percentage: '100%',
+            img: WebStormIcon,
+            index: 1
+        },
+        {
+            name: 'PHPStorm',
+            percentage: '100%',
+            img: PHPStormIcon,
+            index: 2
+        },
+        {
+            name: 'Excel',
+            percentage: '100%',
+            img: ExcelIcon,
+            index: 3
+        },
+        {
+            name: 'Word',
+            percentage: '100%',
+            img: WordIcon,
+            index: 4
+        },
+        {
+            name: 'Photoshop',
+            percentage: '100%',
+            img: PhotoshopIcon,
+            index: 5
+        },
+        {
+            name: 'StarUML',
+            percentage: '100%',
+            img: StarUMLIcon,
+            index: 6
+        },
+        {
+            name: 'Unity',
+            percentage: '100%',
+            img: UnityIcon,
+            index: 7
+        },
+    ]
+
     const arrow = (direction) => {
         var newIndex
-        if(direction === 1 && position !== 8){
+        if(direction === 1 && position !== 5){
             newIndex = position + 1;
             setPosition(newIndex);
             setToggle(!isToggled);
@@ -40,17 +91,9 @@ const Software = () => {
             <div className={"tool_container"}>
                 <img onClick={() => arrow(2)} style={{marginTop: '30px'}} className={"arrow_sizing"} src={LeftArrow} alt={"leftArrow"}/>
                 <div className={"tool_container_display"}>
-                    <Tool className={`lang${position > 8 || calculEcart(0) < 3 ? "Active" : "Hidden"}`} name={"IntelliJ"} img={IntelliJIcon}/>
-                    <Tool className={`lang${position > 9 || calculEcart(1) < 3 ? "Active" : "Hidden"}`} name={"WebStorm"} img={WebStormIcon}/>
-                    <Tool className={`lang${calculEcart(2) < 3 ? "Active" : "Hidden"}`} name={"PHPStorm"} img={PHPStormIcon}/>
-                    <Tool className={`lang${calculEcart(3) < 3 ? "Active" : "Hidden"}`} name={"Excel"} img={ExcelIcon}/>
-                    <Tool className={`lang${calculEcart(4) < 3 ? "Active" : "Hidden"}`} name={"Word"} img={WordIcon}/>
-                    <Tool className={`lang${calculEcart(5) < 3 ? "Active" : "Hidden"}`} name={"Photoshop"} img={PhotoshopIcon}/>
-                    <Tool className={`lang${calculEcart(6) < 3 ? "Active" : "Hidden"}`} name={"StarUML"} img={StarUMLIcon}/>
-                    <Tool className={`lang${calculEcart(7) < 3 ? "Active" : "Hidden"}`} name={"Unity"} img={UnityIcon}/>
-                    <Tool className={`lang${calculEcart(8) < 3 ? "Active" : "Hidden"}`} name={"Unity"} img={UnityIcon}/>
-                    <Tool className={`lang${position < 1 || calculEcart(9) < 3 ? "Active" : "Hidden"}`} name={"Unity"} img={UnityIcon}/>
-                    <Tool className={`lang${position < 2 || calculEcart(10) < 3 ? "Active" : "Hidden"}`} name={"Unity"} img={UnityIcon}/>
+                    {softwares.map((tool) =>
+                        <Tool className={`lang${calculEcart(tool.index) < 3 ? "Active" : "Hidden"}`} name={tool.name} percentage={tool.percentage} img={tool.img}/>
+                    )}
                 </div>
                 <img onClick={() => arrow(1)} style={{marginTop: '30px'}} className={"arrow_sizing"} src={RightArrow} alt={"rightArrow"}/>
             </div>

@@ -1,6 +1,6 @@
-import '../css/style.css';
 import { Popup } from 'semantic-ui-react';
-import 'semantic-ui-css/semantic.min.css'
+import 'semantic-ui-css/semantic.min.css';
+import '../css/tools.css';
 
 const Tool = (props) => {
 
@@ -17,10 +17,9 @@ const Tool = (props) => {
             style={style}
             header={<p style={{textAlign: 'center'}}>{props.name}</p>}
             content={<div className={"PBContainerLittle"}>
-                        <div className={"PBFillerLittle"}>
+                        <div style={{width: props.percentage}} className={"PBFillerLittle"}>
                             <span/>
                         </div>
-                        <p style={{textAlign: 'center'}}>{props.percentage}</p>
                     </div>}
             position='bottom'
             size='small'

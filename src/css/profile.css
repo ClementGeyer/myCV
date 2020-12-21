@@ -1,0 +1,42 @@
+#profile{
+    padding-top: 3em;
+}
+
+.profile_name {
+    text-align: left;
+    margin-left: 1em;
+    margin-bottom: .625em;
+    font-family: 'Caveat', sans-serif;
+    font-size: 5.75em;
+}
+
+.profile_infos{
+    text-align: left;
+    margin: 4.7em 7em;
+    font-family: 'Roboto Thin', sans-serif;
+    font-size: 1.75em;
+    color:white;
+}
+
+.profile_menu{
+    margin-bottom: 10em;
+    display: block;
+    margin-left: auto;
+    margin-right: 10em;
+    width: 20%;
+}
+
+.profile_menu > *{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Thin', sans-serif;
+    font-size: 1.875em;
+    margin-bottom: .6em;
+    color: grey;
+    border: .06em solid grey;
+    background-color: white;
+    opacity: .5;
+    border-radius: .3em;
+    padding: 0 1.875em;
+    line-height: normal;
+}

@@ -1,0 +1,16 @@
+#contact{
+    padding: 1.25em;
+    background-color: black;
+}
+
+.contact_infos{
+    color: white;
+    font-family: 'Roboto Thin', sans-serif;
+    margin-left: 5em;
+    font-size: 1.125em;
+}
+
+.github{
+    display: flex;
+    justify-content: right;
+}

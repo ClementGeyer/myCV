@@ -4,7 +4,7 @@ const Language = (props) => {
         <div className={"language"}>        
             <h3 className={"language_title"}>{props.name}</h3>
             <div className={"PBContainer"}>
-                <div className={"PBFiller" + props.name}>
+                <div style={{width: props.ratio}} className={"PBFiller"}>
                     <span/>
                 </div>
             </div>

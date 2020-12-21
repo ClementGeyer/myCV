@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
+import '../css/experience.css';
 import ExperienceBloc from '../Components/ExperienceBloc';
 import DownArrow from '../css/img/down.png';
 import UpArrow from '../css/img/up.png';
-import '../css/style.css';
 
 const Experience = () => {
 
@@ -12,8 +12,9 @@ const Experience = () => {
     const [expActive, setActive] = useState(1);
 
     const swap = useSpring({
-        transform: isToggled ? 'translate3d(0,0,0)' : direction===1 ? 'translate3d(0,90px,0)' : 'translate3d(0,-90px,0)'
+        transform: isToggled ? 'translate3d(0,15,0)' : direction === 1 ? 'translate3d(0,70px,0)' : 'translate3d(0,-50px,0)'
     })
+
 
     const experiences = [
         {
@@ -53,12 +54,12 @@ const Experience = () => {
     }
 
     return(
-        <div id={"experience"}>
-            <h2 className={"title_white"}>Experiences</h2>
-            <div className={"experience_display"}>
-                <div className={"arrows"}>
-                    <img onClick={() => arrow(1)} className={"arrow_sizing"} src={UpArrow} alt={"upArrow"}/>
-                    <img onClick={() => arrow(2)} className={"arrow_sizing"} src={DownArrow} alt={"downArrow"}/>
+        <div id="experience">
+            <h2 className="title_white">Experiences</h2>
+            <div className="experience_display">
+                <div className="arrows">
+                    <img onClick={() => arrow(1)} className="arrow_sizing" src={UpArrow} alt="upArrow"/>
+                    <img onClick={() => arrow(2)} className="arrow_sizing" src={DownArrow} alt="downArrow"/>
                 </div>
                 <animated.div style={swap}>
                     {experiences.map((exp) => 

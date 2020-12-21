@@ -1,0 +1,35 @@
+#hobbys{
+    background-color: rgb(152, 206, 152);
+    padding: 5em 0;
+}
+
+.hobbys_display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hobbys_display div{
+    width: 20%;
+    border: .06em solid black;
+    border-radius: 1em;
+    margin: 0 5em;
+    background-color: grey;
+}
+
+.hobbys_display img{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+.hobbys_title{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.hobbys_display p{
+    color: white;
+    text-align: center;
+    padding-bottom: 1em;
+}

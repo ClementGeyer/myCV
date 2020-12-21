@@ -1,0 +1,78 @@
+#certification{
+    padding: 5em 0;
+    background: linear-gradient(rgb(22, 105, 120), rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+.bar{
+    width: 88em;
+    margin-top: 2.5em;
+    height: .18em;
+    background-color: black;
+    border-radius: .625em;
+}
+
+.certif_display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* DIPLOMAS */
+
+.diploma{
+    border: .06em solid black;
+    padding: 1.875em;
+    width: 17em;
+    margin: 0 1em;
+    text-align: center;
+    border-radius: .625em;
+    background-color: rgb(101, 142, 150);
+}
+
+.diploma:hover{
+    background-color: rgb(22, 105, 120);
+}
+
+.diploma_title{
+    color: white;
+    font-size: 1.625em;
+    font-weight: bold;
+}
+
+.certif_display p{
+    font-weight: bold;
+}
+
+/* LANGUAGES */
+
+.language_title{
+    font-family: 'Roboto Thin', sans-serif;
+    font-size: 1.5em;
+    margin-left: 1.875em;
+}
+
+.language{
+    margin: 0 1em;
+}
+
+.language p{
+    text-align: center;
+}
+
+.PBContainer{
+    width: 18.75em;
+    height: 1.25em;
+    background-color: #e0e0de;
+    border-radius: 3.125em;
+    margin-left: 3.125em;
+    margin: 1.875em;
+    border: .06em solid black;
+}
+
+.PBFiller{
+    margin-left: 0 !important;
+    height: 100%;
+    background-color: rgb(22, 105, 120);
+    border-radius: inherit;
+    text-align: left;
+}

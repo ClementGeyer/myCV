@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Tool from "./Tool";
-import '../css/style.css';
 import ReactIcon from '../css/img/react.png';
 import JavaIcon from '../css/img/java.png';
 import PHPIcon from '../css/img/php.png';
@@ -19,6 +18,75 @@ const ProgLang= () =>{
 
     const [isToggled, setToggle] = useState(false);
     const [position, setPosition] = useState(2);
+
+    const progLang = [
+        {
+            name: 'React',
+            percentage: '100%',
+            img: ReactIcon,
+            index: 0
+        },
+        {
+            name: 'Java',
+            percentage: '20%',
+            img: JavaIcon,
+            index: 1
+        },
+        {
+            name: 'PHP',
+            percentage: '74%',
+            img: PHPIcon,
+            index: 2
+        },
+        {
+            name: 'C#',
+            percentage: '74%',
+            img: CSharpIcon,
+            index: 3
+        },
+        {
+            name: 'Git',
+            percentage: '74%',
+            img: GitIcon,
+            index: 4
+        },
+        {
+            name: 'Bash',
+            percentage: '74%',
+            img: BashIcon,
+            index: 5
+        },
+        {
+            name: 'C',
+            percentage: '74%',
+            img: CIcon,
+            index: 6
+        },
+        {
+            name: 'Oracle',
+            percentage: '74%',
+            img: OracleIcon,
+            index: 7
+        },
+        {
+            name: 'Javascript',
+            percentage: '74%',
+            img: JavaScriptIcon,
+            index: 8
+        },
+        {
+            name: 'HTML',
+            percentage: '74%',
+            img: HTMLIcon,
+            index: 9
+        },
+        {
+            name: 'CSS',
+            percentage: '74%',
+            img: CSSIcon,
+            index: 10
+        }
+    ]
 
     const arrow = (direction) => {
         var newIndex
@@ -44,17 +112,9 @@ const ProgLang= () =>{
             <div className={"tool_container"}>
                 <img onClick={() => arrow(2)} style={{marginTop: '30px'}} className={"arrow_sizing"} src={LeftArrow} alt={"leftArrow"}/>
                 <div className={"tool_container_display"}>
-                    <Tool className={`lang${position > 8 || calculEcart(0) < 3 ? "Active" : "Hidden"}`} name={"React"} percentage={"74%"} img={ReactIcon}/>
-                    <Tool className={`lang${position > 9 || calculEcart(1) < 3 ? "Active" : "Hidden"}`} name={"Java"} img={JavaIcon}/>
-                    <Tool className={`lang${calculEcart(2) < 3 ? "Active" : "Hidden"}`} name={"PHP"} img={PHPIcon}/>
-                    <Tool className={`lang${calculEcart(3) < 3 ? "Active" : "Hidden"}`} name={"C#"} img={CSharpIcon}/>
-                    <Tool className={`lang${calculEcart(4) < 3 ? "Active" : "Hidden"}`} name={"Git"} img={GitIcon}/>
-                    <Tool className={`lang${calculEcart(5) < 3 ? "Active" : "Hidden"}`} name={"Bash"} img={BashIcon}/>
-                    <Tool className={`lang${calculEcart(6) < 3 ? "Active" : "Hidden"}`} name={"C"} img={CIcon}/>
-                    <Tool className={`lang${calculEcart(7) < 3 ? "Active" : "Hidden"}`} name={"Oracle"} img={OracleIcon}/>
-                    <Tool className={`lang${calculEcart(8) < 3 ? "Active" : "Hidden"}`} name={"Javascript"} img={JavaScriptIcon}/>
-                    <Tool className={`lang${position < 1 || calculEcart(9) < 3 ? "Active" : "Hidden"}`} name={"HTML"} img={HTMLIcon}/>
-                    <Tool className={`lang${position < 2 || calculEcart(10) < 3 ? "Active" : "Hidden"}`} name={"CSS"} img={CSSIcon}/>
+                    {progLang.map((tool) =>
+                        <Tool className={`lang${calculEcart(tool.index) < 3 ? "Active" : "Hidden"}`} name={tool.name} percentage={tool.percentage} img={tool.img}/>
+                    )}
                 </div>
                 <img onClick={() => arrow(1)} style={{marginTop: '30px'}} className={"arrow_sizing"} src={RightArrow} alt={"rightArrow"}/>
             </div>

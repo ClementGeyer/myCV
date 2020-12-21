@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Roboto Thin';
+    src: local('Roboto Thin'), url(./fonts/Roboto/Roboto-Thin.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: local('Roboto Regular'), url(./fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: local('Caveat'), url(./fonts/Caveat/Caveat-VariableFont_wght.ttf) format('truetype');
+}
+
+body {
+	background-color: rgb(22, 105, 120);
+}
+
+.subtitle_black{
+    font-family: 'Roboto Thin', sans-serif;
+    font-size: 2em;
+    margin: 2em 0 2em 6em;
+    color: black;
+}
+
+.subtitle_white{
+    font-family: 'Roboto Thin', sans-serif;
+    font-size: 2em;
+    margin: 2em 0 2em 6em;
+    color: white;
+}
+
+.title_black{
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 2.375em;
+    font-weight: bold;
+    margin: 2em 0 2em 2em;
+    color: black;
+}
+
+.title_white{
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 2.375em;
+    font-weight: bold;
+    margin: 2em 0 2em 2em;
+    color: white;
+}
+
+.arrows{
+    width: 3.125em;
+    margin: 6.25em 1.875em;
+}
+
+.arrow_sizing{
+    width: 3.125em;
+    height: 3.125em;
+}
+
+.img_sizing{
+    height: 4.7em;
+    width: 4.7em;
+    margin: .125em;
+}
