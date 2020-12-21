@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import Tool from "./Tool";
-import IntelliJIcon from '../css/img/intellij.png';
-import WebStormIcon from '../css/img/webstorm.png';
-import PHPStormIcon from '../css/img/phpstorm.png';
+import JetBrainsIcon from '../css/img/jetbrains.png';
 import ExcelIcon from '../css/img/excel.png';
 import WordIcon from '../css/img/word.png';
 import PhotoshopIcon from '../css/img/photoshop.png';
@@ -18,58 +16,46 @@ const Software = () => {
 
     const softwares = [
         {
-            name: 'IntelliJ',
-            percentage: '100%',
-            img: IntelliJIcon,
+            name: 'JetBrains',
+            percentage: '70%',
+            img: JetBrainsIcon,
             index: 0
         },
         {
-            name: 'WebStorm',
-            percentage: '100%',
-            img: WebStormIcon,
+            name: 'Unity',
+            percentage: '50%',
+            img: UnityIcon,
             index: 1
         },
         {
-            name: 'PHPStorm',
-            percentage: '100%',
-            img: PHPStormIcon,
+            name: 'Excel',
+            percentage: '70%',
+            img: ExcelIcon,
             index: 2
         },
         {
-            name: 'Excel',
-            percentage: '100%',
-            img: ExcelIcon,
+            name: 'Word',
+            percentage: '90%',
+            img: WordIcon,
             index: 3
         },
         {
-            name: 'Word',
-            percentage: '100%',
-            img: WordIcon,
+            name: 'Photoshop',
+            percentage: '30%',
+            img: PhotoshopIcon,
             index: 4
         },
         {
-            name: 'Photoshop',
-            percentage: '100%',
-            img: PhotoshopIcon,
-            index: 5
-        },
-        {
             name: 'StarUML',
-            percentage: '100%',
+            percentage: '70%',
             img: StarUMLIcon,
-            index: 6
-        },
-        {
-            name: 'Unity',
-            percentage: '100%',
-            img: UnityIcon,
-            index: 7
-        },
+            index: 5
+        }
     ]
 
     const arrow = (direction) => {
         var newIndex
-        if(direction === 1 && position !== 5){
+        if(direction === 1 && position !== 3){
             newIndex = position + 1;
             setPosition(newIndex);
             setToggle(!isToggled);

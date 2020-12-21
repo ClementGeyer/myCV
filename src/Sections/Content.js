@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import '../css/globalStyles.css';
-import '../css/certification.css';
 import Experience from './Experience';
 import ProgLang from '../Components/ProgLang';
 import Profile from './Profile';

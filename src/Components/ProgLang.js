@@ -22,68 +22,68 @@ const ProgLang= () =>{
     const progLang = [
         {
             name: 'React',
-            percentage: '100%',
+            percentage: '45%',
             img: ReactIcon,
             index: 0
         },
         {
-            name: 'Java',
-            percentage: '20%',
-            img: JavaIcon,
+            name: 'PHP',
+            percentage: '60%',
+            img: PHPIcon,
             index: 1
         },
         {
-            name: 'PHP',
-            percentage: '74%',
-            img: PHPIcon,
+            name: 'Javascript',
+            percentage: '40%',
+            img: JavaScriptIcon,
             index: 2
         },
         {
-            name: 'C#',
-            percentage: '74%',
-            img: CSharpIcon,
+            name: 'HTML',
+            percentage: '90%',
+            img: HTMLIcon,
             index: 3
         },
         {
-            name: 'Git',
-            percentage: '74%',
-            img: GitIcon,
+            name: 'CSS',
+            percentage: '65%',
+            img: CSSIcon,
             index: 4
         },
         {
-            name: 'Bash',
-            percentage: '74%',
-            img: BashIcon,
+            name: 'Java',
+            percentage: '60%',
+            img: JavaIcon,
             index: 5
         },
         {
             name: 'C',
-            percentage: '74%',
+            percentage: '30%',
             img: CIcon,
             index: 6
         },
         {
-            name: 'Oracle',
-            percentage: '74%',
-            img: OracleIcon,
+            name: 'C#',
+            percentage: '60%',
+            img: CSharpIcon,
             index: 7
         },
         {
-            name: 'Javascript',
-            percentage: '74%',
-            img: JavaScriptIcon,
+            name: 'Git',
+            percentage: '70%',
+            img: GitIcon,
             index: 8
         },
         {
-            name: 'HTML',
-            percentage: '74%',
-            img: HTMLIcon,
+            name: 'Bash',
+            percentage: '40%',
+            img: BashIcon,
             index: 9
         },
         {
-            name: 'CSS',
-            percentage: '74%',
-            img: CSSIcon,
+            name: 'Oracle',
+            percentage: '65%',
+            img: OracleIcon,
             index: 10
         }
     ]
