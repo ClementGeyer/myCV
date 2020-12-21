@@ -62,3 +62,23 @@ body {
     width: 4.7em;
     margin: .125em;
 }
+
+@media(max-width: 600px){
+    .title_black{
+        margin: 1em 0 1em 1em;
+    }
+    
+    .title_white{
+        margin: 1em 0 1em 1em;
+    }
+
+    .subtitle_black{
+        font-size: 1.5em;
+        margin: 1em 0 1em 4em;
+    }
+    
+    .subtitle_white{
+        font-size: 1.5em;
+        margin: 1em 0 1em 4em;
+    } 
+}

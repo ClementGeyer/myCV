@@ -26,7 +26,7 @@ const Tool = (props) => {
             show='false'
             disabled={props.disabled}
             trigger={<div className={props.className}>
-                <img className={"img_sizing"} src={props.img} name={props.name}/>
+                <img className={"img_sizing"} src={props.img} name={props.name} alt={props.name}/>
             </div>}
         />
     );

@@ -52,7 +52,7 @@
 }
 
 .language{
-    margin: 0 1em;
+    margin: 2em 1em;
 }
 
 .language p{
@@ -75,4 +75,15 @@
     background-color: rgb(22, 105, 120);
     border-radius: inherit;
     text-align: left;
+}
+
+@media(max-width: 700px){
+    .diploma{
+        margin: 2em;
+        height: 13em;
+    }
+    
+    .bar{
+        width: 35em;
+    }
 }

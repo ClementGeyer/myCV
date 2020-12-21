@@ -44,6 +44,12 @@ class Profile extends Component{
                         spy={true}
                         smooth={true}
                         duration={500}>Contact</Link>
+                    <Link onMouseEnter={this.grow.bind(this, true)} onMouseLeave={this.grow.bind(this, false)}
+                        activeClass="active"
+                        to="hobbys"
+                        spy={true}
+                        smooth={true}
+                        duration={500}>Passions</Link>
                 </div>
             </div>
 

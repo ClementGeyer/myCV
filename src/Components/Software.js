@@ -6,6 +6,8 @@ import WordIcon from '../css/img/word.png';
 import PhotoshopIcon from '../css/img/photoshop.png';
 import StarUMLIcon from '../css/img/staruml.png';
 import UnityIcon from '../css/img/unity.png';
+import VisualStudioIcon from '../css/img/visualstudio.png';
+import VSCodeIcon from '../css/img/vscode.png';
 import RightArrow from '../css/img/right.png';
 import LeftArrow from '../css/img/left.png';
 
@@ -50,12 +52,24 @@ const Software = () => {
             percentage: '70%',
             img: StarUMLIcon,
             index: 5
+        },
+        {
+            name: 'Visual Studio',
+            percentage: '50%',
+            img: VisualStudioIcon,
+            index: 6
+        },
+        {
+            name: 'VSCode',
+            percentage: '35%',
+            img: VSCodeIcon,
+            index: 7
         }
     ]
 
     const arrow = (direction) => {
         var newIndex
-        if(direction === 1 && position !== 3){
+        if(direction === 1 && position !== 5){
             newIndex = position + 1;
             setPosition(newIndex);
             setToggle(!isToggled);

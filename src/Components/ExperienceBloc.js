@@ -20,7 +20,7 @@ const ExperienceBloc = (props) => {
                     })}
                     </ul>
                     </div>}
-            position='right center'
+            position='top center'
             size='small'
             wide='300px'
             show='false'

@@ -40,3 +40,28 @@
     padding: 0 1.875em;
     line-height: normal;
 }
+
+@media(max-width: 700px){
+    .profile_infos{
+        text-align: center;
+        font-family: 'Roboto Thin', sans-serif;
+        font-size: 1.5em;
+        color:white;
+    }
+
+    .profile_menu{
+        margin-bottom: 10em;
+        display: block;
+        margin-left: auto;
+        margin-right: 5em;
+        width: 35%;
+    }
+
+    .profile_name {
+        text-align: left;
+        margin-left: .5em;
+        margin-bottom: .625em;
+        font-family: 'Caveat', sans-serif;
+        font-size: 5.75em;
+    }
+}
