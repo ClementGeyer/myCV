@@ -20,7 +20,7 @@ class Contact extends Component{
                         <p> Numéro de téléphone : {this.state.numero} </p>
                         <p> Si vous avez besoin de renseignements, contactez-moi à l'adresse : {this.state.email} </p>
                     </div>
-                    <a className="github" href={this.state.github}><img className="img_sizing" src={githubLogo}/></a>
+                    <a className="github" href={this.state.github}><img className="img_sizing" src={githubLogo} alt="github"/></a>
                 </div>
             </div>
 

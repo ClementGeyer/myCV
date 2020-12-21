@@ -93,7 +93,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1800px){
     .subtitle_black{
         font-size: 2.5em;
         margin: 1em 0 1em 4em;
