@@ -30,7 +30,7 @@
 
 .hobbys_img{
     width: 3em;
-    height: 3em;
+    height: 9em;
 }
 
 .hobbys_display p{
@@ -51,7 +51,7 @@
     }
 }
 
-@media screen and (max-width: 1920px){
+@media screen and (min-width: 1920px){
     .hobbys_display div{
         width: 30%;
         height: 25em;

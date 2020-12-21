@@ -88,7 +88,7 @@
     }
 }
 
-@media(min-width: 700px){
+@media(min-width: 700px) and (max-width: 1000px){
     .diploma{
         margin: 2em;
         height: 13em;
@@ -99,7 +99,7 @@
     }
 }
 
-@media  screen and (max-width: 1920px){
+@media screen and (min-width: 1920px){
     .diploma{
         margin: 5em;
         height: 15em;

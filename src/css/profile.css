@@ -56,7 +56,7 @@
     }
 }
 
-@media(min-width: 700px){
+@media(min-width: 700px) and (max-width: 1000px){
     .profile_infos{
         text-align: center;
         font-size: 1.5em;
@@ -72,7 +72,7 @@
     }
 }
 
-@media screen and (max-width: 1920px){
+@media screen and (min-width: 1920px){
     .profile_name {
         font-size: 8em;
         margin-left: 1em;

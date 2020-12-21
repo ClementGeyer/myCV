@@ -62,6 +62,7 @@ body {
     width: 4.7em;
     margin: .125em;
 }
+
 @media(max-width: 700px){
     .title_black{
         margin: 1em 0 1em 1em;
@@ -92,7 +93,7 @@ body {
     }
 }
 
-@media  screen and (max-width: 1920px){
+@media screen and (min-width: 1920px){
     .subtitle_black{
         font-size: 2.5em;
         margin: 1em 0 1em 4em;
