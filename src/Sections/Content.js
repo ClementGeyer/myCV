@@ -19,8 +19,8 @@ class Content extends Component{
                     <h2 className="title_black">Certifications</h2>
                     <h3 className="subtitle_black">Diplomes</h3>
                     <div className="certif_display">
-                        <Diploma name="Brevet" desc="Mention Assez Bien (Collège Jean Sturm)"/>
-                        <Diploma name="Baccalauréat STI2D" desc="Mention Bien (Lycée Marcel Rudloff)"/>
+                        <Diploma name="Brevet" mention="Mention Assez Bien" school="Collège Jean Sturm"/>
+                        <Diploma name="Baccalauréat STI2D" mention="Mention Bien" school="Lycée Marcel Rudloff"/>
                     </div>
                     <hr className="bar"/>
                     <h3 className="subtitle_black">Langues</h3>

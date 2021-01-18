@@ -6,7 +6,8 @@ const Diploma = (props) => {
     return(
         <div className={"diploma"}>
             <p className={"diploma_title"}>{props.name}</p>
-            <p>{props.desc}</p>
+            <p>{props.mention}</p>
+            <p>{props.school}</p>
         </div>
     );
 }
