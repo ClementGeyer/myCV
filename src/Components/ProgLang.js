@@ -9,6 +9,7 @@ import BashIcon from '../css/img/bash.png';
 import CIcon from '../css/img/c.png';
 import OracleIcon from '../css/img/oracle.png';
 import JavaScriptIcon from '../css/img/javascript.png';
+import LaravelIcon from '../css/img/laravel.png'
 import HTMLIcon from '../css/img/html.png';
 import CSSIcon from '../css/img/css.png';
 import RightArrow from '../css/img/right.png';
@@ -22,75 +23,81 @@ const ProgLang= () =>{
     const progLang = [
         {
             name: 'React',
-            percentage: '45%',
+            percentage: '60%',
             img: ReactIcon,
             index: 0
         },
         {
             name: 'PHP',
-            percentage: '60%',
+            percentage: '75%',
             img: PHPIcon,
             index: 1
         },
         {
-            name: 'Javascript',
-            percentage: '40%',
-            img: JavaScriptIcon,
+            name: 'Laravel',
+            percentage: '60%',
+            img: LaravelIcon,
             index: 2
+        },
+        {
+            name: 'Javascript',
+            percentage: '60%',
+            img: JavaScriptIcon,
+            index: 3
         },
         {
             name: 'HTML',
             percentage: '90%',
             img: HTMLIcon,
-            index: 3
-        },
-        {
-            name: 'CSS',
-            percentage: '65%',
-            img: CSSIcon,
             index: 4
         },
         {
-            name: 'Java',
-            percentage: '60%',
-            img: JavaIcon,
+            name: 'CSS',
+            percentage: '70%',
+            img: CSSIcon,
             index: 5
         },
         {
-            name: 'C',
-            percentage: '30%',
-            img: CIcon,
+            name: 'Java',
+            percentage: '65%',
+            img: JavaIcon,
             index: 6
         },
         {
-            name: 'C#',
-            percentage: '60%',
-            img: CSharpIcon,
+            name: 'C',
+            percentage: '35%',
+            img: CIcon,
             index: 7
         },
         {
-            name: 'Git',
+            name: 'C#',
             percentage: '70%',
-            img: GitIcon,
+            img: CSharpIcon,
             index: 8
         },
         {
-            name: 'Bash',
-            percentage: '40%',
-            img: BashIcon,
+            name: 'Git',
+            percentage: '80%',
+            img: GitIcon,
             index: 9
         },
         {
-            name: 'Oracle',
-            percentage: '65%',
-            img: OracleIcon,
+            name: 'Bash',
+            percentage: '50%',
+            img: BashIcon,
             index: 10
+        },
+        {
+            name: 'Oracle',
+            percentage: '75%',
+            img: OracleIcon,
+            index: 11
         }
     ]
 
     const arrow = (direction) => {
         var newIndex
-        if(direction === 1 && position !== 8){
+        if(direction === 1 && position !== 9){
             newIndex = position + 1;
             setPosition(newIndex);
             setToggle(!isToggled);

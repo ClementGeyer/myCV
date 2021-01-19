@@ -56,7 +56,7 @@
 
 @media(max-width: 700px){
     .profile_name {
-        margin-left: .5em;
+        margin-left: 1em;
     }
 
     .profile_infos{
@@ -66,6 +66,20 @@
     .profile_menu{
         width: 50%;
         margin: 0 0 2em 6em;
+    }
+
+    .profile_me{
+        display: block;
+    }
+
+    .profile_pic{
+        margin-left: 150px;
+        margin-bottom: 50px;
+    }
+
+    .profile_pic_sizing{
+        height: 150px;
+        width: 150px;
     }
 }
 
@@ -105,5 +119,14 @@
     .profile_menu > *{
         font-size: 2.5em;
         margin-bottom: .75em;
+    }
+
+    .profile_pic{
+        margin-left: 800px;
+    }
+
+    .profile_pic_sizing{
+        height: 300px;
+        width: 300px;
     }
 }

@@ -19,52 +19,53 @@ const Software = () => {
     const softwares = [
         {
             name: 'JetBrains',
-            percentage: '70%',
+            percentage: '75%',
             img: JetBrainsIcon,
             index: 0
+        },
+        {
+            name: 'VSCode',
+            percentage: '50%',
+            img: VSCodeIcon,
+            index: 1
         },
         {
             name: 'Unity',
             percentage: '50%',
             img: UnityIcon,
-            index: 1
+            index: 2
         },
         {
             name: 'Excel',
             percentage: '70%',
             img: ExcelIcon,
-            index: 2
+            index: 3
         },
         {
             name: 'Word',
             percentage: '90%',
             img: WordIcon,
-            index: 3
+            index: 4
         },
         {
             name: 'Photoshop',
             percentage: '30%',
             img: PhotoshopIcon,
-            index: 4
+            index: 5
         },
         {
             name: 'StarUML',
             percentage: '70%',
             img: StarUMLIcon,
-            index: 5
-        },
-        {
-            name: 'Visual Studio',
-            percentage: '50%',
-            img: VisualStudioIcon,
             index: 6
         },
         {
-            name: 'VSCode',
-            percentage: '35%',
-            img: VSCodeIcon,
+            name: 'Visual Studio',
+            percentage: '60%',
+            img: VisualStudioIcon,
             index: 7
-        }
+        },
+        
     ]
 
     const arrow = (direction) => {
