@@ -41,6 +41,19 @@
     line-height: normal;
 }
 
+.profile_pic{
+    margin-left: 500px;
+}
+
+.profile_pic_sizing{
+    height: 200px;
+    width: 200px;
+}
+
+.profile_me{
+    display: flex;
+}
+
 @media(max-width: 700px){
     .profile_name {
         margin-left: .5em;

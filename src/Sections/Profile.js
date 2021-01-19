@@ -1,6 +1,7 @@
 import '../css/profile.css';
 import {Component} from "react";
 import { Link } from "react-scroll";
+import photo from '../css/img/photo.png'
 
 class Profile extends Component{
 
@@ -14,7 +15,12 @@ class Profile extends Component{
 
         return(
             <div id="profile">
-                <h2 className="profile_name">{this.state.name}</h2>
+                <div className="profile_me">
+                    <h2 className="profile_name">{this.state.name}</h2>
+                    <div className="profile_pic">
+                        <img src={photo} className="profile_pic_sizing" alt="Profile photo"/>
+                    </div>
+                </div>
                 <div className="profile_infos">
                     <p>{this.state.studies}</p>
                     <p>{this.state.domain}</p>
